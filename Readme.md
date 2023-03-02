@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов (простой)»
 
 * Студент: [Nikita Zlobin](https://up.htmlacademy.ru/react/12/user/559395).
-* Наставник: `Неизвестно`.
+* Наставник: `Andrey Povstyanko`.
 
 ---
 
