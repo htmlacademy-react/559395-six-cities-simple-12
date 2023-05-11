@@ -1,6 +1,10 @@
 import CardItem from '../../components/card-item/card-item';
 
-function Main() {
+type MainProps = {
+  placesCount: number;
+};
+
+function Main({ placesCount }: MainProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <div style={{display: 'none'}}>
@@ -28,7 +32,7 @@ function Main() {
           <div className="header__wrapper">
             <div className="header__left">
               <a className="header__logo-link header__logo-link--active" href="/#">
-                <img className="header__logo" src="project/public/img/logo.svg" alt="6 cities logo" width="81" height="41" />
+                <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41" />
               </a>
             </div>
             <nav className="header__nav">
@@ -92,7 +96,7 @@ function Main() {
           <div className="cities__places-container container">
             <section className="cities__places places">
               <h2 className="visually-hidden">Places</h2>
-              <b className="places__found">312 places to stay in Amsterdam</b>
+              <b className="places__found">{placesCount} places to stay in Amsterdam</b>
               <form className="places__sorting" action="#" method="get">
                 <span className="places__sorting-caption">Sort by</span>
                 <span className="places__sorting-type" tabIndex={0}>
